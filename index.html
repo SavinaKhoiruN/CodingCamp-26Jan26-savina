@@ -1,113 +1,86 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio Savina</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Portfolio Savina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav>
-    <h1>Savina</h1>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Services</a></li>
-        <li><a href="#work">My Work</a></li>
-        <li><a href="#message">Message Us</a></li>
-    </ul>
+<nav class="navbar">
+  <div class="logo">
+    <img src="image/LOGOS.png" alt="Savina Logo">
+  </div>
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Services</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#message">Message</a></li>
+  </ul>
 </nav>
 
-<!-- HERO -->
-<section class="hero reveal">
-    <div class="hero-text">
-        <h2>Hello, I’m <span id="username"></span> 🌸</h2>
-        <p>
-            A web development learner who loves design, logic,
-            and creating beautiful & functional websites.
-        </p>
-        <a href="#message" class="btn">Let’s Talk</a>
-    </div>
-    <img src="img.png" alt="Avatar">
+<section id="home" class="hero">
+  <div>
+    <h2>Hi, I'm <span id="username"></span> 🌸</h2>
+    <p>Web development learner who loves clean design & logic.</p>
+    <a href="#message" class="btn">Contact Me</a>
+  </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="block reveal">
-    <h3>About Me</h3>
-    <p class="about-text">
-        I’m passionate about learning web development.
-        Familiar with HTML, CSS, PHP, and Git.
-        I enjoy exploring new things and improving my skills continuously.
-    </p>
+<section id="about" class="section">
+  <h3>About Me</h3>
+  <p>
+    I am learning web development and familiar with HTML, CSS, PHP, and Git.
+    I enjoy building simple and clean websites.
+  </p>
 </section>
 
-<!-- SERVICES -->
-<section id="skills" class="reveal">
-    <h3>My Services</h3>
-    <div class="cards">
-        <div class="card">
-            <strong>Web Design</strong>
-            <p>Clean, aesthetic & responsive layouts.</p>
-        </div>
-        <div class="card">
-            <strong>Frontend Development</strong>
-            <p>HTML, CSS & basic JavaScript.</p>
-        </div>
-        <div class="card">
-            <strong>PHP Basics</strong>
-            <p>Forms, logic & simple backend.</p>
-        </div>
-        <div class="card">
-            <strong>Version Control</strong>
-            <p>Git & GitHub collaboration.</p>
-        </div>
-    </div>
+<section id="skills" class="section gray">
+  <h3>My Services</h3>
+  <div class="grid">
+    <div class="card">Web Design</div>
+    <div class="card">Frontend (HTML, CSS, JS)</div>
+    <div class="card">PHP Basics</div>
+    <div class="card">Git & GitHub</div>
+  </div>
 </section>
 
-<!-- WORK -->
-<section id="work" class="block reveal">
-    <h3>My Work</h3>
-    <div class="cards work">
-        <div class="card work-card">
-            <img src="https://picsum.photos/300/200?1">
-            <span>Restaurant Website</span>
-        </div>
-        <div class="card work-card">
-            <img src="https://picsum.photos/300/200?2">
-            <span>Login Page</span>
-        </div>
-        <div class="card work-card">
-            <img src="https://picsum.photos/300/200?3">
-            <span>Portfolio Layout</span>
-        </div>
-        <div class="card work-card">
-            <img src="https://picsum.photos/300/200?4">
-            <span>Practice Project</span>
-        </div>
+<section id="work" class="section">
+  <h3>My Work</h3>
+  <div class="grid">
+    <div class="track">
+      <div class="card"><img src="image/img1.png"></div>
+      <div class="card"><img src="image/img2.png"></div>
+      <div class="card"><img src="image/img3.png"></div>
+      <div class="card"><img src="image/img4.png"></div>
+
+      <div class="card"><img src="image/img1.png"></div>
+      <div class="card"><img src="image/img2.png"></div>
+      <div class="card"><img src="image/img3.png"></div>
+      <div class="card"><img src="image/img4.png"></div>
     </div>
+  </div>
 </section>
 
-<!-- MESSAGE US -->
-<section id="message" class="block reveal">
-    <h3>Message Us</h3>
+<section id="message" class="section gray">
+  <h3>Message Us</h3>
 
-    <form id="messageForm" class="cards">
-        <input type="text" id="name" placeholder="Nama">
-        <input type="email" id="email" placeholder="Email">
-        <input type="tel" id="phone" placeholder="Nomor Telepon">
-        <textarea id="messageText" placeholder="Pesan"></textarea>
-        <button type="submit" class="btn">Submit</button>
-    </form>
+  <form id="messageForm" class="form">
+    <input type="text" id="name" placeholder="Nama">
+    <input type="email" id="email" placeholder="Email">
+    <input type="tel" id="phone" placeholder="Nomor Telepon">
+    <textarea id="messageText" placeholder="Pesan"></textarea>
+    <button type="submit" class="btn">Submit</button>
+  </form>
 
-    <div id="result" class="card" style="display:none; margin-top:30px;">
-        <h4>Hasil Pesan</h4>
-        <p id="resultText"></p>
-    </div>
+  <div id="result" class="result"></div>
 </section>
 
 <footer>
-    © 2026 • Savina Portfolio 🩷
+  © 2026 Savina • Portfolio
 </footer>
 
 <script src="js/script.js"></script>
